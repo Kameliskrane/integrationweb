@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,800,800i');
+
+header{
+    background-color: blue;
+
+}
+
+header nav{
+    float: right;
+}
+
+#logo-image{
+    float: left;
+    width: 140px;
+    height: 45px;
+    background-image: url(img/logo.svg);
+    background-position: left center;
+    background-size: contain; /*respect la taile de la div */
+    background-repeat: no-repeat;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+header nav li{
+    /*display: inline-block;*/
+    float: left;
+}
+
+header nav ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav a {
+    padding: 2em 1em;
+    background-color: green;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.3);
+    position: relative;
+}
+
+#logo-image{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#section1{
+    background-color: yellow;
+    background-image: url('img/hero-image.jpg');
+    background-size: contain; /*respect la taile de la div */
+    
+
+}
+
+#section1 .container{
+    height: 640px;
+}
+
+.clearfix::before{
+    content: "";
+    display: table;
+}
+
+.content-vertically-centered{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: green;
+}
+
+
+
+#section1 small{
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    width: 100%;
+    text-align: center;
+    background-color: green;
+
+}
+
+.benefit{
+    float: left;
+    /*width:25%;*/
+    text-align: center;
+    background-color: teal;
+    margin-right: 2%;
+    width: calc(94% / 4);
+
+}
+
+.benefit:last-child{
+    margin-right: 0;
+}
+
+
+#section2{
+    background-color: blue;
+    color: white;
+}
+
+#section2 .container > h1{
+    text-align: center;
+}
+
+
+.benefit figure{
+    width:100%;
+    background-color: green;
+    padding-top: 100%;
+    margin: 0;
+}
+
+#section2 .container{
+    padding: 45px 0;
+}
+
+
+.offre {
+    width: 33%;
+    margin: 2%;
+    float: left;
+}
+
+.offre:first-child {
+    margin-left: 16%;
+    margin-right: 2%;
+}
+
+#section1 a {
+    padding: 10px 25px;
+    background-color: #1e3264;
+    border-radius: 100px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition : background-color 0.9s;
+}
+
+#section1 a:hover{
+    background-color : red;
+}
+
+#section1 h1 {
+    font-size: 5.5em;
+    font-weight: 900;
+    color: white;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#section1 h2 {
+    color: white;
+}
